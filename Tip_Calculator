@@ -1,0 +1,8 @@
+print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill? $")) #without float at the beginning it was still sting so we converted it into float decimal number.
+tip = int(input("What percentage tip would you like to give? 10 12 15 "))
+people = int(input("How many people to split the bill? "))
+amount = (bill * (1 + tip/100))/people
+print(f"Each person should pay : ${round(amount, 2)}")
+
+# When we want input from the user, it is still sting so we have to ensure about the data type. So those conversions make really sense.
