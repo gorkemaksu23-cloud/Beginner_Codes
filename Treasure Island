@@ -1,0 +1,27 @@
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+first_challenge = input("You have to choose the correct path "
+                        "to continue the game.\n     "
+                        "Choose right or left. ").lower()
+if first_challenge == "left":
+    print("You reached a lake. Now you have to decide whether "
+          "you swim across the lake or wait for the boat. The boat goes to"
+          " an island in the middle of the lake. ")
+    second_challenge = input("Now decide swim or wait ").lower()
+    if second_challenge == "wait":
+        print("You waited for the boat and reached the island safe. "
+              "You have 3 doors in front of you. Red, Blue or Yellow. ")
+        last_challenge =input("Which door do you choose? "
+                              "Red, Blue or Yellow? ").lower()
+        if last_challenge == "yellow":
+            print("CONGRATS! YOU WIN!!!!!")
+        elif last_challenge == "red":
+            print("FAIL! YOU FELL DOWN FROM A CLIFF. ")
+        elif last_challenge == "blue":
+            print("FAIL! YOU ARE SHOOTED BY A HUNTER.")
+        else:
+            print("GAME OVER!")
+    else:
+        print("The water is poisonous. You died. GAME OVER. ")
+else:
+    print("GAME OVER. You can restart the game")
